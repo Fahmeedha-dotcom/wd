@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fahmeedha | BBA DBE Student @ IIMB</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #C2DFE3;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546') no-repeat center center/cover;
+      color: #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid white;
+      width: 22ch;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 22ch }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    header a {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 30px;
+      background: #C2DFE3;
+      color: #333;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+      border: 2px solid #C2DFE3;
+    }
+
+    header a:hover {
+      background: #a8cdd3;
+      color: #fff;
+      border-color: #a8cdd3;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card, .small-card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto 15px;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .skill-box {
+      background-color: white;
+      padding: 15px 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      font-weight: 600;
+      font-family: sans-serif;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skill-box i {
+      color: #f78ca2;
+      font-size: 18px;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Fahmeedha</h1>
+    <a href="#portfolio">Explore My Resume</a>
+  </header>
+
+  <section id="about" style="text-align: center;">
+    <h2>About Me</h2>
+    <p style="max-width: 800px; margin: auto; font-size: 1.1rem; line-height: 1.8;">
+      I’m a first‑year BBA DBE student at IIM Bangalore and a coffee-driven brainstormer with a passion for design, strategy, and innovation.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>IIM Bangalore</h3>
+        <p>BBA in Digital Business & Entrepreneurship<br>Class of 2027</p>
+      </div>
+      <div class="card">
+        <h3>Oasis International School</h3>
+        <p>Cambridge IGCSE <br>2007–2022</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="text-align: center;">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box"><i class="fas fa-code"></i> Basic HTML & CSS</div>
+      <div class="skill-box"><i class="fas fa-file-alt"></i> Google Docs, Slides, Sheets</div>
+      <div class="skill-box"><i class="fas fa-chalkboard-teacher"></i> Presentation Making</div>
+      <div class="skill-box"><i class="fas fa-clock"></i> Time Management</div>
+      <div class="skill-box"><i class="fas fa-lightbulb"></i> Creative Thinking</div>
+      <div class="skill-box"><i class="fas fa-sync-alt"></i> Consistency</div>
+      <div class="skill-box"><i class="fas fa-tasks"></i> Task Prioritization</div>
+      <div class="skill-box"><i class="fas fa-bullseye"></i> Goal Setting</div>
+      <div class="skill-box"><i class="fas fa-bolt"></i> Self-Motivation</div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="cards">
+      <div class="card">
+        <strong>Zero-Budget Venture Project:</strong><br>
+        <em>Built and launched a basic digital-products website—moodboards, trackers, wallpapers, from coding to deployment.</em>
+        <a href="https://comfy-lamington-6c0ba1.netlify.app" target="_blank">ThePastelPages</a>
+      </div>
+      <div class="card small-card">
+        Participated in MUN conferences and competed in school basketball tournaments
+      </div>
+      <div class="card small-card">
+        Won gold medal in Science Olympiad at school-level
+      </div>
+      <div class="card small-card">
+        Volunteered for Bala Janaagraha social initiative as an active team leader, identifying and solving local civic problems
+      </div>
+    </div>
+  </section>
+
+  <section id="languages">
+    <h2>Languages</h2>
+    <div class="cards">
+      <div class="card">English <em>Full Professional Proficiency</em></div>
+      <div class="card">Urdu <em>Native or Bilingual Proficiency</em></div>
+      <div class="card">Hindi <em>Limited Working Proficiency</em></div>
+      <div class="card">Arabic <em>Elementary Proficiency</em></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="cards">
+      <div class="card">📧 Email: fahmeedhaaa@gmail.com</div>
+      <div class="card">📱 Phone: +91 7019065892</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Fahmeedha | IIMB BBA DBE </p>
+  </footer>
+</body>
+</html>
+
